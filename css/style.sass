@@ -93,6 +93,7 @@ h2
 
 footer
   background-color: $lightGreen
+  padding-bottom: 1rem
 
 .wrapper
   margin: 0 auto
@@ -105,18 +106,22 @@ footer
   margin: 0 auto
   @include box-sizing
 
-.header
+.header, .footer
   &__list
     flex-direction: row
     display: flex
     justify-content: space-between
     align-items: center
-    margin: 0 0 1rem
     &_bottom a
       color: $textDarkGrey
       line-height: $fsXXL
+      @include transition
       &:hover
         border-bottom: 3px solid $lightGreen
+        @include transition
+
+.textSmallWhite
+  @include font($color: $textWhite, $size: $fsS, $weight: bold)
 
 .textSmallLightGreen
   @include font($color: $lightGreen, $size: $fsS, $weight: bold)
@@ -141,8 +146,10 @@ footer
   cursor: pointer
   background-color: $lightGreen
   @include font($color: $textWhite, $weight: bold, $line: 2.4rem)
+  @include transition
   &:hover
     color: $textBlack
+    @include transition
 
 .showcase
   background: url("../img/backgrounds/tachka.png") right no-repeat
@@ -165,11 +172,38 @@ footer
 .textLargeWhite
   @include font($color: $textWhite, $family: $bold, $size: $fs3XL, $weight: bold)
 
-.benefits__body
-  display: grid
-  grid-gap: 1rem
-  grid-template-columns: repeat(3, 1fr)
-  grid-template-rows: repeat(3, 250px)
+.benefits
+  margin-bottom: 3rem
+  &__body
+    display: grid
+    grid-gap: 1rem
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(3, 250px)
+  &__item
+    display: flex
+    align-items: flex-end
+    & h3
+      margin-left: 1.5rem
+      @include font($color: $textWhite, $family: $bold, $size: $fsL, $weight: bold)
+      max-width: 250px
+  &__item_1
+    background: url("../img/benefits/equable.png") no-repeat
+  &__item_2
+    background: url("../img/benefits/auto.png") no-repeat
+  &__item_3
+    background: url("../img/benefits/lowPrice.png") no-repeat
+  &__item_4
+    background: url("../img/benefits/moisture.png") no-repeat
+  &__item_5
+    background: url("../img/benefits/waterTemperature.png") no-repeat
+  &__item_6
+    background: url("../img/benefits/unikTech.png") no-repeat
+  &__item_7
+    background: url("../img/benefits/easyInstal.png") no-repeat
+  &__item_8
+    background: url("../img/benefits/waranty.png") no-repeat
+  &__item_9
+    background: url("../img/benefits/easySafe.png") no-repeat
 
 .schema
   background: url("../img/backgrounds/sky.png") no-repeat
@@ -232,34 +266,4 @@ footer
     & input
       width: 100%
       line-height: 2rem
-
-
-//.flip-scale-down-hor
-//  -webkit-animation: flip-scale-down-hor 0.6s linear 0.1s both
-//  animation: flip-scale-down-hor 0.6s linear 0.1s both
-
-
-//@-webkit-keyframes flip-scale-down-hor
-//  0%
-//    -webkit-transform: scale(1) rotateX(0)
-//    transform: scale(1) rotateX(0)
-//  50%
-//    -webkit-transform: scale(0.4) rotateX(90deg)
-//    transform: scale(0.4) rotateX(90deg)
-//  100%
-//    -webkit-transform: scale(1) rotateX(180deg)
-//    transform: scale(1) rotateX(180deg)
-//
-//
-//@keyframes flip-scale-down-hor
-//  0%
-//    -webkit-transform: scale(1) rotateX(0)
-//    transform: scale(1) rotateX(0)
-//  50%
-//    -webkit-transform: scale(0.4) rotateX(90deg)
-//    transform: scale(0.4) rotateX(90deg)
-//  100%
-//    -webkit-transform: scale(1) rotateX(180deg)
-//    transform: scale(1) rotateX(180deg)
-//
 

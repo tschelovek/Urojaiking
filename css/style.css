@@ -54,6 +54,7 @@ h2 span {
 
 footer {
   background-color: #96c22b;
+  padding-bottom: 1rem;
 }
 
 .wrapper {
@@ -73,19 +74,34 @@ footer {
   box-sizing: border-box;
 }
 
-.header__list {
+.header__list, .footer__list {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 1rem;
 }
-.header__list_bottom a {
+.header__list_bottom a, .footer__list_bottom a {
   color: #555555;
   line-height: 2rem;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
-.header__list_bottom a:hover {
+.header__list_bottom a:hover, .footer__list_bottom a:hover {
   border-bottom: 3px solid #96c22b;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.textSmallWhite {
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: "openSans", sans-serif;
+  color: #ffffff;
+  line-height: 1;
 }
 
 .textSmallLightGreen {
@@ -140,9 +156,17 @@ footer {
   font-family: "openSans", sans-serif;
   color: #ffffff;
   line-height: 2.4rem;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .button:hover {
   color: #000000;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .showcase {
@@ -190,11 +214,54 @@ footer {
   line-height: 1;
 }
 
+.benefits {
+  margin-bottom: 3rem;
+}
 .benefits__body {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 250px);
+}
+.benefits__item {
+  display: flex;
+  align-items: flex-end;
+}
+.benefits__item h3 {
+  margin-left: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "openSansBald", sans-serif;
+  color: #ffffff;
+  line-height: 1;
+  max-width: 250px;
+}
+.benefits__item_1 {
+  background: url("../img/benefits/equable.png") no-repeat;
+}
+.benefits__item_2 {
+  background: url("../img/benefits/auto.png") no-repeat;
+}
+.benefits__item_3 {
+  background: url("../img/benefits/lowPrice.png") no-repeat;
+}
+.benefits__item_4 {
+  background: url("../img/benefits/moisture.png") no-repeat;
+}
+.benefits__item_5 {
+  background: url("../img/benefits/waterTemperature.png") no-repeat;
+}
+.benefits__item_6 {
+  background: url("../img/benefits/unikTech.png") no-repeat;
+}
+.benefits__item_7 {
+  background: url("../img/benefits/easyInstal.png") no-repeat;
+}
+.benefits__item_8 {
+  background: url("../img/benefits/waranty.png") no-repeat;
+}
+.benefits__item_9 {
+  background: url("../img/benefits/easySafe.png") no-repeat;
 }
 
 .schema {
