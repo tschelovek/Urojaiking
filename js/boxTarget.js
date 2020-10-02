@@ -18,3 +18,4 @@ benefitsItem.forEach((item) => item.addEventListener('mouseout', () => {
     item.querySelector('.box1').classList.remove('deactivated');
 }));
 
+//TODO Сделать плавную анимацию перехода
