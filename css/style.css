@@ -226,6 +226,10 @@ footer {
 .benefits__item {
   display: flex;
   align-items: flex-end;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .benefits__item h3 {
   margin-left: 1.5rem;
@@ -262,6 +266,27 @@ footer {
 }
 .benefits__item_9 {
   background: url("../img/benefits/easySafe.png") no-repeat;
+}
+
+.box2 {
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(100, 200, 50, 0.7);
+  padding: 1rem;
+  box-sizing: border-box;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.deactivated {
+  display: none;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .schema {

@@ -182,6 +182,7 @@ footer
   &__item
     display: flex
     align-items: flex-end
+    @include transition()
     & h3
       margin-left: 1.5rem
       @include font($color: $textWhite, $family: $bold, $size: $fsL, $weight: bold)
@@ -204,6 +205,19 @@ footer
     background: url("../img/benefits/waranty.png") no-repeat
   &__item_9
     background: url("../img/benefits/easySafe.png") no-repeat
+
+.box2
+  color: white
+  height: 100%
+  width: 100%
+  background-color: rgba(100, 200, 50, 0.7)
+  padding: 1rem
+  box-sizing: border-box
+  @include transition()
+
+.deactivated
+  display: none
+  @include transition()
 
 .schema
   background: url("../img/backgrounds/sky.png") no-repeat

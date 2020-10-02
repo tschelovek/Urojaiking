@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 let multiItemSlider = (function () {
     return function (selector, config) {
         let
@@ -97,7 +97,7 @@ let multiItemSlider = (function () {
         let _controlClick = function (e) {
             if (e.target.classList.contains('slider__control')) {
                 e.preventDefault();
-                var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+                let direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
                 _transformItem(direction);
                 clearInterval(_interval);
                 _cycle(_config.direction);
